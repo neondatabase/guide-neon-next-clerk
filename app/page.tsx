@@ -41,7 +41,7 @@ export default async function Home() {
       <div className="w-full text-center">
         <input
           type="submit"
-          value={"Save Message"}
+          value={"Save Quote"}
           className="bg-[#00E699] cursor-pointer transition-colors hover:bg-[#00e5BF] text-gray-800 font-semibold py-2 px-4 rounded focus:outline-none"
         />
       </div>
