@@ -25,7 +25,7 @@ cd guide-neon-next-clerk
 npm install
 ```
 
-3. Create a `.env.local` file in the root of the project and add the following environment variables:
+3. Copy the `.env.example` file (in the root directory), with the following environment variables, to create a `.env` file. 
 
 ```bash
 DATABASE_URL=YOUR_NEON_DATABASE_URL
@@ -33,7 +33,7 @@ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=xxxxxxxxxxxx
 CLERK_SECRET_KEY=xxxxxx
 ```
 
-Replace the placeholders with your actual Neon database URL and Clerk application configuration values.
+Replace the placeholders with your actual Neon database URL and the Clerk application configuration values.
 
 4. Run the database migrations using Drizzle.
 
@@ -51,7 +51,8 @@ npm run dev
 
 ## Usage
 
-When unauthenticated, you will be redirected to the Clerk login page. 
+This NextJS application has a single page that lets you add/remove a text quote. When unauthenticated, you will be redirected to the Clerk login page. 
+
 - Login with an email account or using one of the allowed social auth providers. 
 - Once logged in, you can enter your favorite quote in the text field and click "Save Quote" to store it in the database.
 - The saved quote will be displayed on the page. You can delete it by clicking the "Delete Quote" button. 
